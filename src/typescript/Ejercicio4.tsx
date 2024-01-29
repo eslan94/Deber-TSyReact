@@ -21,8 +21,6 @@ export const Ejercicio4 = () =>{
         }
     ];
 
-    
-
     const sumarCalificaciones = alumnos[0].calificaciones+alumnos[1].calificaciones+alumnos[2].calificaciones;
 
     const promedio= sumarCalificaciones/alumnos.length;
