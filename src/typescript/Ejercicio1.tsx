@@ -1,23 +1,19 @@
 //1.Crear una función con parámetros que permita calcular el área de un cuadrado.
-// Importa React y cualquier otro módulo necesario
+
 import React from 'react';
 
-// Definimos una interfaz para los props que recibirá nuestro componente
 interface AreaCuadrado {
-  lado: number; // Longitud del lado del cuadrado
+  lado: number;
 }
 
-// Creamos un componente funcional que recibe los props
-const SquareAreaCalculator: React.FC<AreaCuadrado> = ({ lado }) => {
-  // Función para calcular el área del cuadrado
-  const calculateArea = (lado: number): number => {
+
+const CalculadoraArea: React.FC<AreaCuadrado> = ({ lado }) => {
+  
+  const calcularArea = (lado: number): number => {
     return lado * lado;
   };
 
-  // Llamamos a la función para calcular el área
-  const area = calculateArea(lado);
-
-  // Renderizamos el resultado en el componente
+  const area = calcularArea(lado);
   return (
     <div>
       <h2>Área del cuadrado</h2>
@@ -28,4 +24,4 @@ const SquareAreaCalculator: React.FC<AreaCuadrado> = ({ lado }) => {
 };
 
 // Exportamos el componente
-export default SquareAreaCalculator;
+export default CalculadoraArea;
