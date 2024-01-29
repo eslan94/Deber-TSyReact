@@ -23,15 +23,14 @@ export const Ejercicio4 = () =>{
 
     
 
-    const sumarCalificaciones = 10+8+9;
-    const promedio= () =>{
-        return sumarCalificaciones/3;
-    }
+    const sumarCalificaciones = alumnos[0].calificaciones+alumnos[1].calificaciones+alumnos[2].calificaciones;
+
+    const promedio= sumarCalificaciones/alumnos.length;
 
     return(
         <>
             <h3>Ejercicio 4</h3>
-            <span>El promedio es: {}</span>
+            <span>El promedio es: {promedio}</span>
         </>
     )
 
