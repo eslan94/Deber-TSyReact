@@ -1,27 +1,15 @@
 //1.Crear una función con parámetros que permita calcular el área de un cuadrado.
 
-import React from 'react';
+export const Ejercicio1 = () =>{
 
-interface AreaCuadrado {
-  lado: number;
+    const calcularArea = (lado:number)=>{
+        return lado * lado;
+    } 
+
+    return(
+        <>
+            <h3>Ejercicio 1</h3>
+            <span>El área del cuadrado es: {(calcularArea(4))}</span>
+        </>
+    )
 }
-
-
-const CalculadoraArea: React.FC<AreaCuadrado> = ({ lado }) => {
-  
-  const calcularArea = (lado: number): number => {
-    return lado * lado;
-  };
-
-  const area = calcularArea(lado);
-  return (
-    <div>
-      <h2>Área del cuadrado</h2>
-      <p>Lado del cuadrado: {lado}</p>
-      <p>Área: {area}</p>
-    </div>
-  );
-};
-
-// Exportamos el componente
-export default CalculadoraArea;
