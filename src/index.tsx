@@ -5,6 +5,7 @@ import { Ejercicio1 } from './typescript/Ejercicio1';
 import { Ejercicio4 } from './typescript/Ejercicio4';
 import { Ejercicio2 } from './typescript/Ejercicio2';
 import { Ejercicio3 } from './typescript/Ejercicio3';
+import { Ejercicio5 } from './typescript/Ejercicio5';
 
 
 const root = ReactDOM.createRoot(
@@ -16,8 +17,8 @@ root.render(
     {/*<Ejercicio1/>*/}
     {/*<Ejercicio2/>*/}
     {/*<Ejercicio3/>*/}
-    <Ejercicio4/>
-    {/*<Ejercicio5/>*/}
+    {/*<Ejercicio4/>*/}
+    <Ejercicio5/>
 
   </React.StrictMode>
 );
